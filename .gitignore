@@ -32,6 +32,7 @@
 **/*.project
 **/*.cproject
 /.settings/
+**/.settings/
 *.launch
 *.swn
 *.d
