@@ -1,0 +1,21 @@
+23:57:04 **** Incremental Build of configuration Debug for project BareMetalDriver ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F411VETx -DSTM32 -DSTM32F4 -DSTM32F411E_DISCO -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+../Src/uart.c: In function 'USART_IRQHandling':
+../Src/uart.c:424:33: warning: variable 'temp3' set but not used [-Wunused-but-set-variable]
+  424 |         uint32_t temp1 , temp2, temp3;
+      |                                 ^~~~~
+arm-none-eabi-gcc -o "BareMetalDriver.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\acer\Downloads\learn Embedded\Stm32BareMetal\BareMetalDriver\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BareMetalDriver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BareMetalDriver.elf
+ 
+arm-none-eabi-size  BareMetalDriver.elf 
+arm-none-eabi-objdump -h -S BareMetalDriver.elf  > "BareMetalDriver.list"
+   text	   data	    bss	    dec	    hex	filename
+    668	      0	   1568	   2236	    8bc	BareMetalDriver.elf
+Finished building: default.size.stdout
+ 
+Finished building: BareMetalDriver.list
+ 
+
+23:57:04 Build Finished. 0 errors, 1 warnings. (took 390ms)
+

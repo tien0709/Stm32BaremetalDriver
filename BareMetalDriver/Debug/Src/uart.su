@@ -1,0 +1,14 @@
+../Src/uart.c:17:5:__io_putchar	16	static
+../Src/uart.c:22:6:system_uart_init	8	static
+../Src/uart.c:45:13:uart_write	16	static
+../Src/uart.c:53:17:compute_usart_baudrate	16	static
+../Src/uart.c:57:13:usart_set_baudrate	16	static
+../Src/uart.c:62:6:USART_PeriClockControl	16	static
+../Src/uart.c:92:6:USART_Init	24	static
+../Src/uart.c:185:6:USART_DeInit	16	static
+../Src/uart.c:205:6:USART_SendData	32	static
+../Src/uart.c:267:6:USART_ReceiveData	32	static
+../Src/uart.c:344:9:USART_SendDataIT	32	static
+../Src/uart.c:381:9:USART_ReceiveDataIT	32	static
+../Src/uart.c:421:6:USART_IRQHandling	32	static
+../Src/uart.c:736:6:USART_SetBaudRate	40	static
