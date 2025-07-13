@@ -20,17 +20,17 @@
 *.db
 
 # === IDE-specific ===
-/.vscode/
+**/.vscode/
 /.idea/
 .metadata/
 *.swp
 
 # === STM32CubeIDE workspace files ===
 .project
-/.project
-/.cproject
-**/.project
-**/.cproject
+*.project
+*.cproject
+**/*.project
+**/*.cproject
 /.settings/
 *.launch
 *.swn
@@ -55,7 +55,7 @@
 *.rej
 
 # === dóc ===
-*/.pdf
+*.pdf
 
 # === Optional ===
 # Ignore generated HAL/LL drivers if using custom versions
