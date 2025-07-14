@@ -10,11 +10,11 @@ All peripherals are configured directly via registers, without using HAL or LL d
 
 ## 🧩 Features
 
-- ⚙️ GPIO driver (input/output, LED control, button)
-- 📡 UART driver (transmit/receive via USART2)
-- 📦 SPI driver (master mode, 8-bit frame)
-- 📗 I2C driver (standard mode & fast mode)
-- 🔁 Bootloader:
+- GPIO driver (input/output, LED control, button)
+- UART driver (transmit/receive via USART2)
+- SPI driver (master mode, 8-bit frame)
+- I2C driver (standard mode & fast mode)
+- Bootloader:
   - Application validation
   - Jump to App1 / Factory App
   - Configurable base addresses
